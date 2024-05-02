@@ -13,7 +13,7 @@ module.exports = (env, argv) => {
     mode: isDevelopment ? 'development' : 'production',
     entry: './src/index.js',
     output: {
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'build'),
       filename: isDevelopment ? 'bundle.js' : 'bundle.[contenthash].js'
     },
     module: {

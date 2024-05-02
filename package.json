@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --config webpack.config.js",
     "build": "webpack --mode production",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,7 @@
     "kundan8239",
     "one.com",
     "kuliza",
-    "SDE2", 
+    "SDE2",
     "Node Js Developer",
     "Full Stack Developer",
     "Interested in Machine Learning & AI"
@@ -28,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/kundan2403/kundan2403.github.io/issues"
   },
-  "homepage": "https://github.com/kundan2403/kundan2403.github.io#readme",
+  "homepage": "https://github.com/kundan2403/kundan2403.github.io.git/build",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "bootstrap": "^5.3.3",
